@@ -1,0 +1,9 @@
+.venv
+.cache
+.git
+.env
+var
+tests
+test-results
+database/*
+!database/README.md

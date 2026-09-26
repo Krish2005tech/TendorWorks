@@ -1,0 +1,3 @@
+option to enable and disable database
+option to enable and disable the drawing agent then it will just do the estimate thing
+also initial ingesting to rag for data items that has not been ingested to rag database

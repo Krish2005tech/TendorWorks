@@ -1,0 +1,28 @@
+[
+  {
+    "name": "Synthetic school with explicit geometry",
+    "tenant": "demo",
+    "brief": {
+      "title": "Reference school",
+      "description": "Build a CPWD primary school for 180 students with standard facilities.",
+      "authority": "cpwd", "state": "Delhi", "location": "New Delhi", "building_type": "school",
+      "length": "20", "width": "15", "floor_area": "600", "floors": 2,
+      "estimate_date": "2026-09-26", "execution_year": 2026
+    },
+    "expected": {
+      "status": "draft", "required_components": ["rcc", "reinforcement", "fire_safety", "earthing", "accessibility"],
+      "quantity": {"rcc": "132", "reinforcement": "19200", "waterproofing": "300"},
+      "unit_rate": {"rcc": "7800", "reinforcement": "82"}, "minimum_evidence_coverage": 1
+    }
+  },
+  {
+    "name": "Unknown state schedule remains unresolved",
+    "tenant": "demo",
+    "brief": {
+      "title": "Unsupported state example", "description": "Build a state PWD primary school.",
+      "authority": "state_pwd", "state": "Kerala", "location": "Kochi", "building_type": "school",
+      "estimate_date": "2026-09-26", "execution_year": 2026
+    },
+    "expected": {"status": "needs_input", "base_total": null}
+  }
+]

@@ -1,0 +1,1207 @@
+{
+  "id": "demo-cpwd",
+  "version": "1.0",
+  "name": "CPWD building demo",
+  "authority": "cpwd",
+  "states": [],
+  "work_categories": [
+    "building"
+  ],
+  "supported_buildings": [
+    "school",
+    "office",
+    "community_hall"
+  ],
+  "design_template": "rectangular_concept_v1",
+  "effective_from": "2020-01-01",
+  "effective_to": null,
+  "trust": "demo",
+  "documents": [
+    {
+      "id": "demo-cpwd-template",
+      "title": "Synthetic concept and quantity recipes — demonstration only",
+      "version": "1",
+      "kind": "template",
+      "authority": "cpwd",
+      "state": "",
+      "discipline": "all",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "url": "",
+      "text": "NOT AN OFFICIAL STANDARD. Demonstration recipes:\nSynthetic recipe 1: site_clearance: site_area m2; Illustrative allowance only; not an official engineering norm.\nSynthetic recipe 2: excavation: footprint * 0.30 m3; Illustrative allowance only; not an official engineering norm.\nSynthetic recipe 3: foundation_concrete: footprint * 0.12 m3; Illustrative allowance only; not an official engineering norm.\nSynthetic recipe 4: rcc: gross_floor_area * 0.22 m3; Illustrative allowance only; not an official engineering norm.\nSynthetic recipe 5: reinforcement: gross_floor_area * 32 kg; Illustrative allowance only; not an official engineering norm.\nSynthetic recipe 6: formwork: gross_floor_area * 2.2 m2; Illustrative allowance only; not an official engineering norm.\nSynthetic recipe 7: masonry: wall_volume m3; \nSynthetic recipe 8: waterproofing: roof_area m2; \nSynthetic recipe 9: doors: door_area m2; \nSynthetic recipe 10: windows: window_area m2; \nSynthetic recipe 11: plaster: wall_finish_area m2; \nSynthetic recipe 12: painting: wall_finish_area m2; \nSynthetic recipe 13: flooring: net_floor_area m2; \nSynthetic recipe 14: plumbing: gross_floor_area m2; Illustrative allowance only; not an official engineering norm.\nSynthetic recipe 15: drainage: 1 item; Illustrative allowance only; not an official engineering norm.\nSynthetic recipe 16: electrical: gross_floor_area m2; Illustrative allowance only; not an official engineering norm.\nSynthetic recipe 17: earthing: 1 item; Illustrative allowance only; not an official engineering norm.\nSynthetic recipe 18: fire_safety: gross_floor_area m2; Illustrative allowance only; not an official engineering norm.\nSynthetic recipe 19: accessibility: 1 item; Illustrative allowance only; not an official engineering norm.\nSynthetic recipe 20: external: site_area - footprint m2; Illustrative allowance only; not an official engineering norm.\nSynthetic recipe 21: testing: 1 item; Illustrative allowance only; not an official engineering norm.\nSynthetic recipe 22: site_facilities: duration_months month; Illustrative allowance only; not an official engineering norm.\nSynthetic recipe 23: hvac: gross_floor_area m2; Illustrative allowance only; not an official engineering norm.\nSynthetic recipe 24: solar: 1 item; Illustrative allowance only; not an official engineering norm.",
+      "locator": "",
+      "supersedes": null,
+      "trust": "demo",
+      "snapshot_ref": "",
+      "content_hash": "",
+      "retrieved_at": "2026-09-26T10:52:05.896386+00:00"
+    },
+    {
+      "id": "demo-cpwd-rates",
+      "title": "Synthetic rate catalogue — not CPWD, USSOR or PWD prices",
+      "version": "1",
+      "kind": "schedule",
+      "authority": "cpwd",
+      "state": "",
+      "discipline": "all",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "url": "",
+      "text": "ALL PRICES BELOW ARE INVENTED FOR SOFTWARE TESTING.\n[\n  {\n    \"id\": \"rate-site_clearance\",\n    \"item_code\": \"DEMO.001\",\n    \"component_key\": \"site_clearance\",\n    \"description\": \"Site clearance allowance\",\n    \"unit\": \"m2\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"45\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 1; DEMO.001\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-excavation\",\n    \"item_code\": \"DEMO.002\",\n    \"component_key\": \"excavation\",\n    \"description\": \"Foundation excavation allowance\",\n    \"unit\": \"m3\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"310\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 2; DEMO.002\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-foundation_concrete\",\n    \"item_code\": \"DEMO.003\",\n    \"component_key\": \"foundation_concrete\",\n    \"description\": \"Foundation concrete allowance\",\n    \"unit\": \"m3\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"6200\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 3; DEMO.003\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-rcc\",\n    \"item_code\": \"DEMO.004\",\n    \"component_key\": \"rcc\",\n    \"description\": \"RCC frame and slab allowance, excluding reinforcement\",\n    \"unit\": \"m3\",\n    \"specification\": {\n      \"grade\": \"M25\"\n    },\n    \"value\": \"7800\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 4; DEMO.004\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-reinforcement\",\n    \"item_code\": \"DEMO.005\",\n    \"component_key\": \"reinforcement\",\n    \"description\": \"Reinforcement steel allowance\",\n    \"unit\": \"kg\",\n    \"specification\": {\n      \"grade\": \"Fe500\"\n    },\n    \"value\": \"82\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 5; DEMO.005\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-formwork\",\n    \"item_code\": \"DEMO.006\",\n    \"component_key\": \"formwork\",\n    \"description\": \"Formwork allowance\",\n    \"unit\": \"m2\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"610\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 6; DEMO.006\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-masonry\",\n    \"item_code\": \"DEMO.007\",\n    \"component_key\": \"masonry\",\n    \"description\": \"Brick masonry, including mortar\",\n    \"unit\": \"m3\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"5850\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 7; DEMO.007\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-waterproofing\",\n    \"item_code\": \"DEMO.008\",\n    \"component_key\": \"waterproofing\",\n    \"description\": \"Roof waterproofing\",\n    \"unit\": \"m2\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"420\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 8; DEMO.008\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-doors\",\n    \"item_code\": \"DEMO.009\",\n    \"component_key\": \"doors\",\n    \"description\": \"Doors and frames\",\n    \"unit\": \"m2\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"3900\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 9; DEMO.009\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-windows\",\n    \"item_code\": \"DEMO.010\",\n    \"component_key\": \"windows\",\n    \"description\": \"Glazed windows\",\n    \"unit\": \"m2\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"4700\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 10; DEMO.010\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-plaster\",\n    \"item_code\": \"DEMO.011\",\n    \"component_key\": \"plaster\",\n    \"description\": \"Wall plaster\",\n    \"unit\": \"m2\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"260\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 11; DEMO.011\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-painting\",\n    \"item_code\": \"DEMO.012\",\n    \"component_key\": \"painting\",\n    \"description\": \"Wall painting\",\n    \"unit\": \"m2\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"155\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 12; DEMO.012\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-flooring\",\n    \"item_code\": \"DEMO.013\",\n    \"component_key\": \"flooring\",\n    \"description\": \"Standard floor finish\",\n    \"unit\": \"m2\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"890\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 13; DEMO.013\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-plumbing\",\n    \"item_code\": \"DEMO.014\",\n    \"component_key\": \"plumbing\",\n    \"description\": \"Water supply and sanitary installation allowance\",\n    \"unit\": \"m2\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"430\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 14; DEMO.014\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-drainage\",\n    \"item_code\": \"DEMO.015\",\n    \"component_key\": \"drainage\",\n    \"description\": \"Drainage connection allowance\",\n    \"unit\": \"item\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"48000\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"fixed\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 15; DEMO.015\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-electrical\",\n    \"item_code\": \"DEMO.016\",\n    \"component_key\": \"electrical\",\n    \"description\": \"Electrical installation allowance\",\n    \"unit\": \"m2\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"760\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 16; DEMO.016\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-earthing\",\n    \"item_code\": \"DEMO.017\",\n    \"component_key\": \"earthing\",\n    \"description\": \"Earthing installation allowance\",\n    \"unit\": \"item\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"38000\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"fixed\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 17; DEMO.017\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-fire_safety\",\n    \"item_code\": \"DEMO.018\",\n    \"component_key\": \"fire_safety\",\n    \"description\": \"Fire safety provision allowance\",\n    \"unit\": \"m2\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"175\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 18; DEMO.018\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-accessibility\",\n    \"item_code\": \"DEMO.019\",\n    \"component_key\": \"accessibility\",\n    \"description\": \"Accessible access and signage allowance\",\n    \"unit\": \"item\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"85000\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"fixed\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 19; DEMO.019\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-external\",\n    \"item_code\": \"DEMO.020\",\n    \"component_key\": \"external\",\n    \"description\": \"External paving and drainage allowance\",\n    \"unit\": \"m2\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"900\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 20; DEMO.020\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-testing\",\n    \"item_code\": \"DEMO.021\",\n    \"component_key\": \"testing\",\n    \"description\": \"Testing and commissioning allowance\",\n    \"unit\": \"item\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"32000\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"fixed\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 21; DEMO.021\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-site_facilities\",\n    \"item_code\": \"DEMO.022\",\n    \"component_key\": \"site_facilities\",\n    \"description\": \"Temporary site facilities\",\n    \"unit\": \"month\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"9500\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"time\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 22; DEMO.022\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-hvac\",\n    \"item_code\": \"DEMO.023\",\n    \"component_key\": \"hvac\",\n    \"description\": \"Comfort air-conditioning allowance\",\n    \"unit\": \"m2\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": \"1700\",\n    \"basis\": \"scheduled\",\n    \"cost_behavior\": \"quantity\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 23; DEMO.023\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [],\n    \"supersedes\": null\n  },\n  {\n    \"id\": \"rate-solar\",\n    \"item_code\": \"DEMO.024\",\n    \"component_key\": \"solar\",\n    \"description\": \"Rooftop solar allowance\",\n    \"unit\": \"item\",\n    \"specification\": {\n      \"finish\": \"standard\"\n    },\n    \"value\": null,\n    \"basis\": \"non_scheduled\",\n    \"cost_behavior\": \"fixed\",\n    \"source_id\": \"demo-cpwd-rates\",\n    \"locator\": \"Synthetic row 24; DEMO.024\",\n    \"effective_from\": \"2020-01-01\",\n    \"effective_to\": null,\n    \"inclusions\": [\n      \"materials\",\n      \"labour\",\n      \"overhead\"\n    ],\n    \"exclusions\": [\n      \"tax\"\n    ],\n    \"resources\": [\n      {\n        \"description\": \"Illustrative solar equipment package\",\n        \"consumption\": \"1\",\n        \"unit\": \"set\",\n        \"unit_rate\": \"425000\",\n        \"source_id\": \"demo-cpwd-rates\",\n        \"locator\": \"Synthetic solar resource A\"\n      },\n      {\n        \"description\": \"Illustrative installation labour\",\n        \"consumption\": \"10\",\n        \"unit\": \"day\",\n        \"unit_rate\": \"2500\",\n        \"source_id\": \"demo-cpwd-rates\",\n        \"locator\": \"Synthetic solar resource B\"\n      }\n    ],\n    \"supersedes\": null\n  }\n]",
+      "locator": "",
+      "supersedes": null,
+      "trust": "demo",
+      "snapshot_ref": "",
+      "content_hash": "",
+      "retrieved_at": "2026-09-26T10:52:05.896772+00:00"
+    },
+    {
+      "id": "demo-cpwd-rules",
+      "title": "Demonstration completeness checks — not statutory rules",
+      "version": "1",
+      "kind": "rule",
+      "authority": "cpwd",
+      "state": "",
+      "discipline": "all",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "url": "",
+      "text": "Example scope check: include fire_safety, earthing and accessibility. Actual government and local requirements must be imported and reviewed.",
+      "locator": "",
+      "supersedes": null,
+      "trust": "demo",
+      "snapshot_ref": "",
+      "content_hash": "",
+      "retrieved_at": "2026-09-26T10:52:05.896779+00:00"
+    }
+  ],
+  "components": [
+    {
+      "key": "site_clearance",
+      "category": "Site and foundations",
+      "description": "Site clearance allowance",
+      "unit": "m2",
+      "classification": "functional",
+      "use": "Site clearance allowance for the proposed building.",
+      "measurement": "site_area",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 1",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "building",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    },
+    {
+      "key": "excavation",
+      "category": "Site and foundations",
+      "description": "Foundation excavation allowance",
+      "unit": "m3",
+      "classification": "functional",
+      "use": "Foundation excavation allowance for the proposed building.",
+      "measurement": "footprint * 0.30",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 2",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "building",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    },
+    {
+      "key": "foundation_concrete",
+      "category": "Site and foundations",
+      "description": "Foundation concrete allowance",
+      "unit": "m3",
+      "classification": "functional",
+      "use": "Foundation concrete allowance for the proposed building.",
+      "measurement": "footprint * 0.12",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 3",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "building",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    },
+    {
+      "key": "rcc",
+      "category": "Structure",
+      "description": "RCC frame and slab allowance, excluding reinforcement",
+      "unit": "m3",
+      "classification": "functional",
+      "use": "RCC frame and slab allowance, excluding reinforcement for the proposed building.",
+      "measurement": "gross_floor_area * 0.22",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 4",
+      "specification": {
+        "grade": "M25"
+      },
+      "element_kind": "slab",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    },
+    {
+      "key": "reinforcement",
+      "category": "Structure",
+      "description": "Reinforcement steel allowance",
+      "unit": "kg",
+      "classification": "functional",
+      "use": "Reinforcement steel allowance for the proposed building.",
+      "measurement": "gross_floor_area * 32",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 5",
+      "specification": {
+        "grade": "Fe500"
+      },
+      "element_kind": "slab",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    },
+    {
+      "key": "formwork",
+      "category": "Structure",
+      "description": "Formwork allowance",
+      "unit": "m2",
+      "classification": "functional",
+      "use": "Formwork allowance for the proposed building.",
+      "measurement": "gross_floor_area * 2.2",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 6",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "slab",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    },
+    {
+      "key": "masonry",
+      "category": "Envelope",
+      "description": "Brick masonry, including mortar",
+      "unit": "m3",
+      "classification": "functional",
+      "use": "Brick masonry, including mortar for the proposed building.",
+      "measurement": "wall_volume",
+      "quantity_basis": "concept_derived",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 7",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "wall",
+      "excludes_components": [],
+      "allowance_reason": ""
+    },
+    {
+      "key": "waterproofing",
+      "category": "Envelope",
+      "description": "Roof waterproofing",
+      "unit": "m2",
+      "classification": "functional",
+      "use": "Roof waterproofing for the proposed building.",
+      "measurement": "roof_area",
+      "quantity_basis": "concept_derived",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 8",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "roof",
+      "excludes_components": [],
+      "allowance_reason": ""
+    },
+    {
+      "key": "doors",
+      "category": "Envelope",
+      "description": "Doors and frames",
+      "unit": "m2",
+      "classification": "functional",
+      "use": "Doors and frames for the proposed building.",
+      "measurement": "door_area",
+      "quantity_basis": "concept_derived",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 9",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "door",
+      "excludes_components": [],
+      "allowance_reason": ""
+    },
+    {
+      "key": "windows",
+      "category": "Envelope",
+      "description": "Glazed windows",
+      "unit": "m2",
+      "classification": "functional",
+      "use": "Glazed windows for the proposed building.",
+      "measurement": "window_area",
+      "quantity_basis": "concept_derived",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 10",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "window",
+      "excludes_components": [],
+      "allowance_reason": ""
+    },
+    {
+      "key": "plaster",
+      "category": "Finishes",
+      "description": "Wall plaster",
+      "unit": "m2",
+      "classification": "functional",
+      "use": "Wall plaster for the proposed building.",
+      "measurement": "wall_finish_area",
+      "quantity_basis": "concept_derived",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 11",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "wall",
+      "excludes_components": [],
+      "allowance_reason": ""
+    },
+    {
+      "key": "painting",
+      "category": "Finishes",
+      "description": "Wall painting",
+      "unit": "m2",
+      "classification": "functional",
+      "use": "Wall painting for the proposed building.",
+      "measurement": "wall_finish_area",
+      "quantity_basis": "concept_derived",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 12",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "wall",
+      "excludes_components": [],
+      "allowance_reason": ""
+    },
+    {
+      "key": "flooring",
+      "category": "Finishes",
+      "description": "Standard floor finish",
+      "unit": "m2",
+      "classification": "functional",
+      "use": "Standard floor finish for the proposed building.",
+      "measurement": "net_floor_area",
+      "quantity_basis": "concept_derived",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 13",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "room",
+      "excludes_components": [],
+      "allowance_reason": ""
+    },
+    {
+      "key": "plumbing",
+      "category": "Services",
+      "description": "Water supply and sanitary installation allowance",
+      "unit": "m2",
+      "classification": "functional",
+      "use": "Water supply and sanitary installation allowance for the proposed building.",
+      "measurement": "gross_floor_area",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 14",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "building",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    },
+    {
+      "key": "drainage",
+      "category": "Services",
+      "description": "Drainage connection allowance",
+      "unit": "item",
+      "classification": "functional",
+      "use": "Drainage connection allowance for the proposed building.",
+      "measurement": "1",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 15",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "building",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    },
+    {
+      "key": "electrical",
+      "category": "Services",
+      "description": "Electrical installation allowance",
+      "unit": "m2",
+      "classification": "functional",
+      "use": "Electrical installation allowance for the proposed building.",
+      "measurement": "gross_floor_area",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 16",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "building",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    },
+    {
+      "key": "earthing",
+      "category": "Services",
+      "description": "Earthing installation allowance",
+      "unit": "item",
+      "classification": "mandatory",
+      "use": "Earthing installation allowance for the proposed building.",
+      "measurement": "1",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 17",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "building",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    },
+    {
+      "key": "fire_safety",
+      "category": "Services",
+      "description": "Fire safety provision allowance",
+      "unit": "m2",
+      "classification": "mandatory",
+      "use": "Fire safety provision allowance for the proposed building.",
+      "measurement": "gross_floor_area",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 18",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "building",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    },
+    {
+      "key": "accessibility",
+      "category": "External works",
+      "description": "Accessible access and signage allowance",
+      "unit": "item",
+      "classification": "mandatory",
+      "use": "Accessible access and signage allowance for the proposed building.",
+      "measurement": "1",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 19",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "building",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    },
+    {
+      "key": "external",
+      "category": "External works",
+      "description": "External paving and drainage allowance",
+      "unit": "m2",
+      "classification": "functional",
+      "use": "External paving and drainage allowance for the proposed building.",
+      "measurement": "site_area - footprint",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 20",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "building",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    },
+    {
+      "key": "testing",
+      "category": "Preliminaries",
+      "description": "Testing and commissioning allowance",
+      "unit": "item",
+      "classification": "functional",
+      "use": "Testing and commissioning allowance for the proposed building.",
+      "measurement": "1",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 21",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "building",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    },
+    {
+      "key": "site_facilities",
+      "category": "Preliminaries",
+      "description": "Temporary site facilities",
+      "unit": "month",
+      "classification": "functional",
+      "use": "Temporary site facilities for the proposed building.",
+      "measurement": "duration_months",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 22",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "building",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    },
+    {
+      "key": "hvac",
+      "category": "Optional upgrades",
+      "description": "Comfort air-conditioning allowance",
+      "unit": "m2",
+      "classification": "optional",
+      "use": "Comfort air-conditioning allowance for the proposed building.",
+      "measurement": "gross_floor_area",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 23",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "building",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    },
+    {
+      "key": "solar",
+      "category": "Optional upgrades",
+      "description": "Rooftop solar allowance",
+      "unit": "item",
+      "classification": "optional",
+      "use": "Rooftop solar allowance for the proposed building.",
+      "measurement": "1",
+      "quantity_basis": "template_allowance",
+      "source_id": "demo-cpwd-template",
+      "locator": "Synthetic recipe 24",
+      "specification": {
+        "finish": "standard"
+      },
+      "element_kind": "roof",
+      "excludes_components": [],
+      "allowance_reason": "Illustrative allowance only; not an official engineering norm."
+    }
+  ],
+  "rates": [
+    {
+      "id": "rate-site_clearance",
+      "item_code": "DEMO.001",
+      "component_key": "site_clearance",
+      "description": "Site clearance allowance",
+      "unit": "m2",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "45",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 1; DEMO.001",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-excavation",
+      "item_code": "DEMO.002",
+      "component_key": "excavation",
+      "description": "Foundation excavation allowance",
+      "unit": "m3",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "310",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 2; DEMO.002",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-foundation_concrete",
+      "item_code": "DEMO.003",
+      "component_key": "foundation_concrete",
+      "description": "Foundation concrete allowance",
+      "unit": "m3",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "6200",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 3; DEMO.003",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-rcc",
+      "item_code": "DEMO.004",
+      "component_key": "rcc",
+      "description": "RCC frame and slab allowance, excluding reinforcement",
+      "unit": "m3",
+      "specification": {
+        "grade": "M25"
+      },
+      "value": "7800",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 4; DEMO.004",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-reinforcement",
+      "item_code": "DEMO.005",
+      "component_key": "reinforcement",
+      "description": "Reinforcement steel allowance",
+      "unit": "kg",
+      "specification": {
+        "grade": "Fe500"
+      },
+      "value": "82",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 5; DEMO.005",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-formwork",
+      "item_code": "DEMO.006",
+      "component_key": "formwork",
+      "description": "Formwork allowance",
+      "unit": "m2",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "610",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 6; DEMO.006",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-masonry",
+      "item_code": "DEMO.007",
+      "component_key": "masonry",
+      "description": "Brick masonry, including mortar",
+      "unit": "m3",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "5850",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 7; DEMO.007",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-waterproofing",
+      "item_code": "DEMO.008",
+      "component_key": "waterproofing",
+      "description": "Roof waterproofing",
+      "unit": "m2",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "420",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 8; DEMO.008",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-doors",
+      "item_code": "DEMO.009",
+      "component_key": "doors",
+      "description": "Doors and frames",
+      "unit": "m2",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "3900",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 9; DEMO.009",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-windows",
+      "item_code": "DEMO.010",
+      "component_key": "windows",
+      "description": "Glazed windows",
+      "unit": "m2",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "4700",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 10; DEMO.010",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-plaster",
+      "item_code": "DEMO.011",
+      "component_key": "plaster",
+      "description": "Wall plaster",
+      "unit": "m2",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "260",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 11; DEMO.011",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-painting",
+      "item_code": "DEMO.012",
+      "component_key": "painting",
+      "description": "Wall painting",
+      "unit": "m2",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "155",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 12; DEMO.012",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-flooring",
+      "item_code": "DEMO.013",
+      "component_key": "flooring",
+      "description": "Standard floor finish",
+      "unit": "m2",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "890",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 13; DEMO.013",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-plumbing",
+      "item_code": "DEMO.014",
+      "component_key": "plumbing",
+      "description": "Water supply and sanitary installation allowance",
+      "unit": "m2",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "430",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 14; DEMO.014",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-drainage",
+      "item_code": "DEMO.015",
+      "component_key": "drainage",
+      "description": "Drainage connection allowance",
+      "unit": "item",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "48000",
+      "basis": "scheduled",
+      "cost_behavior": "fixed",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 15; DEMO.015",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-electrical",
+      "item_code": "DEMO.016",
+      "component_key": "electrical",
+      "description": "Electrical installation allowance",
+      "unit": "m2",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "760",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 16; DEMO.016",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-earthing",
+      "item_code": "DEMO.017",
+      "component_key": "earthing",
+      "description": "Earthing installation allowance",
+      "unit": "item",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "38000",
+      "basis": "scheduled",
+      "cost_behavior": "fixed",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 17; DEMO.017",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-fire_safety",
+      "item_code": "DEMO.018",
+      "component_key": "fire_safety",
+      "description": "Fire safety provision allowance",
+      "unit": "m2",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "175",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 18; DEMO.018",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-accessibility",
+      "item_code": "DEMO.019",
+      "component_key": "accessibility",
+      "description": "Accessible access and signage allowance",
+      "unit": "item",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "85000",
+      "basis": "scheduled",
+      "cost_behavior": "fixed",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 19; DEMO.019",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-external",
+      "item_code": "DEMO.020",
+      "component_key": "external",
+      "description": "External paving and drainage allowance",
+      "unit": "m2",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "900",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 20; DEMO.020",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-testing",
+      "item_code": "DEMO.021",
+      "component_key": "testing",
+      "description": "Testing and commissioning allowance",
+      "unit": "item",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "32000",
+      "basis": "scheduled",
+      "cost_behavior": "fixed",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 21; DEMO.021",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-site_facilities",
+      "item_code": "DEMO.022",
+      "component_key": "site_facilities",
+      "description": "Temporary site facilities",
+      "unit": "month",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "9500",
+      "basis": "scheduled",
+      "cost_behavior": "time",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 22; DEMO.022",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-hvac",
+      "item_code": "DEMO.023",
+      "component_key": "hvac",
+      "description": "Comfort air-conditioning allowance",
+      "unit": "m2",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": "1700",
+      "basis": "scheduled",
+      "cost_behavior": "quantity",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 23; DEMO.023",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [],
+      "supersedes": null
+    },
+    {
+      "id": "rate-solar",
+      "item_code": "DEMO.024",
+      "component_key": "solar",
+      "description": "Rooftop solar allowance",
+      "unit": "item",
+      "specification": {
+        "finish": "standard"
+      },
+      "value": null,
+      "basis": "non_scheduled",
+      "cost_behavior": "fixed",
+      "source_id": "demo-cpwd-rates",
+      "locator": "Synthetic row 24; DEMO.024",
+      "effective_from": "2020-01-01",
+      "effective_to": null,
+      "inclusions": [
+        "materials",
+        "labour",
+        "overhead"
+      ],
+      "exclusions": [
+        "tax"
+      ],
+      "resources": [
+        {
+          "description": "Illustrative solar equipment package",
+          "consumption": "1",
+          "unit": "set",
+          "unit_rate": "425000",
+          "source_id": "demo-cpwd-rates",
+          "locator": "Synthetic solar resource A"
+        },
+        {
+          "description": "Illustrative installation labour",
+          "consumption": "10",
+          "unit": "day",
+          "unit_rate": "2500",
+          "source_id": "demo-cpwd-rates",
+          "locator": "Synthetic solar resource B"
+        }
+      ],
+      "supersedes": null
+    }
+  ],
+  "rules": [
+    {
+      "id": "demo-completeness",
+      "text": "Demonstration scope coverage only; import applicable official rules before real use.",
+      "source_id": "demo-cpwd-rules",
+      "locator": "Example scope check",
+      "required_components": [
+        "fire_safety",
+        "earthing",
+        "accessibility"
+      ],
+      "blocking": true
+    }
+  ],
+  "adjustments": [],
+  "historical_rates": [],
+  "design_defaults": {
+    "floor_area": "600",
+    "floors": "1",
+    "height": "3.3",
+    "aspect_ratio": "1.5",
+    "wall_thickness": "0.23",
+    "partition_thickness": "0.115",
+    "corridor_width": "2"
+  },
+  "default_source_id": "demo-cpwd-template",
+  "max_concept_floors": 3,
+  "supersedes": null
+}

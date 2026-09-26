@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#183e39">
+  <title>Tenderworks — Project estimates, grounded in evidence</title>
+  <link rel="stylesheet" href="/static/styles.css">
+  <script type="module" src="/static/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to workspace</a>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a href="#projects" class="brand" aria-label="Tenderworks home">
+        <span class="brand-mark"><svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M5 26V12L16 5l11 7v14M2 26h28M11 26V15h10v11M11 20h10" stroke="currentColor" stroke-width="1.7"/><path d="M16 5v21" stroke="currentColor" stroke-width="1" opacity=".5"/></svg></span>
+        <span>Tenderworks<span class="brand-sub">PUBLIC WORKS ESTIMATION</span></span>
+      </a>
+      <div class="workspace-label">YOUR WORKSPACE</div>
+      <nav aria-label="Main navigation">
+        <a href="#projects" data-nav="projects"><span class="nav-symbol">▦</span> Projects <span id="project-count" class="nav-count">0</span></a>
+        <a href="#knowledge" data-nav="knowledge"><span class="nav-symbol">▤</span> Knowledge library</a>
+        <a href="#feedback" data-nav="feedback"><span class="nav-symbol">◎</span> Review & feedback</a>
+        <a href="#system" data-nav="system"><span class="nav-symbol">⚙</span> Workspace settings</a>
+      </nav>
+      <div class="sidebar-note"><span class="tiny-line"></span><h3>Every number has a story.</h3><p>Trace quantities to drawings, rates to sources, and decisions to their evidence.</p><div class="sidebar-chips"><span>CPWD</span><span>Railways</span><span>State PWD</span></div></div>
+      <div class="profile"><span class="avatar">E</span><div><strong id="profile-name">Engineer workspace</strong><span id="profile-mode">Local workspace</span></div><span class="online-dot"></span></div>
+    </aside>
+    <div class="content-shell">
+      <header class="topbar"><div><span class="breadcrumb">Workspace</span><span class="slash">/</span><span id="page-name">Projects</span></div><div class="topbar-right"><span class="live-dot"></span><span id="mode-label">Loading workspace</span><span class="topbar-divider"></span><span>INR · Metric</span></div></header>
+      <main id="main" tabindex="-1"><div class="initial-loading"><div class="spinner"></div><p>Preparing your workspace…</p></div></main>
+      <footer class="footer"><span>Tenderworks <span class="footer-dot">·</span> Evidence-led project planning</span><span>Concept estimates require engineering review.</span></footer>
+    </div>
+  </div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <dialog id="detail-dialog"><div class="dialog-top"><span id="dialog-eyebrow" class="eyebrow">DETAILS</span><button id="dialog-close" class="icon-button" aria-label="Close dialog">×</button></div><div id="dialog-body"></div></dialog>
+</body>
+</html>

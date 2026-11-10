@@ -93,6 +93,12 @@ Every completed, failed, or paused estimate writes a read-only checkpoint evalua
 uv run tender evaluation-report <revision-id>
 ```
 
+## Database migrations and tracing
+
+Run `uv run tender db upgrade` at deployment and create an Alembic migration for every SQLAlchemy model change (`uv run tender db revision --message "..."`). Existing pre-Alembic application databases are stamped at the baseline without recreating tables; LangGraph checkpoint tables remain LangGraph-managed.
+
+Optional self-hosted Langfuse tracing uses `TENDER_TRACING_ENABLED`, host, public/secret keys, and `TENDER_TRACING_REDACT_TEXT`. Tracing failures are non-fatal and credentials are never included in trace metadata.
+
 ```sh
 uv run pytest -q
 uv run ruff check src tests

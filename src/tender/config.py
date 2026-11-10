@@ -28,6 +28,11 @@ class Settings(BaseSettings):
     nvidia_embedding_model: str = ""
     nvidia_rerank_model: str = ""
     rag_enabled: bool = False
+    tracing_enabled: bool = False
+    tracing_host: str = ""
+    tracing_public_key: str = ""
+    tracing_secret_key: str = ""
+    tracing_redact_text: bool = False
     web_enabled: bool = False
     web_search_key: str = ""
     web_allowed_hosts: list[str] = ["cpwd.gov.in", "doe.gov.in", "indianrailways.gov.in"]

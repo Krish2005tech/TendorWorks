@@ -20,6 +20,7 @@ ROLE_INSTRUCTIONS = {
     "pricing_verifier": "Look for specification mismatches, missing rate inclusions and unsupported prices. Deterministic checks remain authoritative.",
     "evidence_audit": "Check whether cited evidence supports the actual claims and flag gaps. A URL alone is not evidence. Do not invent citations.",
 }
+PROMPT_VERSION = "2026-11-llm-review-v1"
 
 REVIEW_SCHEMA = {
     "type": "object",
@@ -118,6 +119,7 @@ class ModelAdapter:
             "tool_calls": 0,
             "input_tokens": 0,
             "output_tokens": 0,
+            "prompt_version": PROMPT_VERSION,
         }
         for iteration in range(4):
             response = httpx.post(

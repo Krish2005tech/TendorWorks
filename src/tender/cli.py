@@ -10,6 +10,9 @@ def main():
     serve.add_argument("--host", default="127.0.0.1")
     serve.add_argument("--port", type=int, default=8000)
     commands.add_parser("ingest", help="Index new and changed source files in database/")
+    db = commands.add_parser("db", help="Database migrations")
+    db.add_argument("action", choices=["upgrade", "current", "revision"])
+    db.add_argument("--message", default="model change")
     evaluation_report = commands.add_parser(
         "evaluation-report", help="Regenerate a revision evaluation workbook"
     )
@@ -44,6 +47,16 @@ def main():
         args.path.write_text(demo_pack().model_dump_json(indent=2))
         print(f"Synthetic example written to {args.path}")
     else:
+        if args.command == "db":
+            from alembic import command
+            from alembic.config import Config
+            from tender.config import Settings
+            cfg = Config("alembic.ini")
+            cfg.set_main_option("sqlalchemy.url", Settings().database_url)
+            if args.action == "upgrade": command.upgrade(cfg, "head")
+            elif args.action == "current": command.current(cfg)
+            else: command.revision(cfg, message=args.message, autogenerate=True)
+            return
         from tender.config import Settings
         from tender.db import Repository
         from tender.ingestion import FolderIngestor

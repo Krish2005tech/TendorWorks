@@ -12,6 +12,7 @@ from langgraph.types import Command, interrupt
 
 from tender.agents import Specialists, finding
 from tender.db import Repository
+from tender.evaluation_reports import write_evaluation_workbook
 from tender.exports import ReportCompiler
 from tender.ingestion import FolderIngestor
 from tender.knowledge import KnowledgeGateway
@@ -167,8 +168,12 @@ class EstimationWorkflow:
         seen: set[tuple[str, str]] = set()
         for query in queries:
             found = self.gateway.search(
-                query, state["tenant"], authority=result.brief.authority,
-                state=result.brief.state, as_of=result.brief.estimate_date, limit=8,
+                query,
+                state["tenant"],
+                authority=result.brief.authority,
+                state=result.brief.state,
+                as_of=result.brief.estimate_date,
+                limit=8,
             )
             for item in found["results"]:
                 marker = (item["document_id"], item["locator"])
@@ -178,9 +183,16 @@ class EstimationWorkflow:
                 evidence_id = f"retrieved:{item['document_id']}:{len(seen)}"
                 result.evidence.append(
                     EvidenceRecord(
-                        id=evidence_id, kind="retrieved", title=item["title"], source_id=item["source_id"],
-                        version=item["version"], locator=item["locator"], snapshot_ref=item["snapshot_ref"],
-                        content_hash=item["content_hash"], value=item["content"], trust=item["trust"],
+                        id=evidence_id,
+                        kind="retrieved",
+                        title=item["title"],
+                        source_id=item["source_id"],
+                        version=item["version"],
+                        locator=item["locator"],
+                        snapshot_ref=item["snapshot_ref"],
+                        content_hash=item["content_hash"],
+                        value=item["content"],
+                        trust=item["trust"],
                     )
                 )
         result.metrics["retrieved_chunks"] = len(seen)
@@ -354,4 +366,11 @@ class EstimationWorkflow:
             )
             self.repo.save_result(result, token)
         finally:
+            try:
+                row = self.repo.get_revision(revision_id, identity.tenant)
+                write_evaluation_workbook(
+                    EstimateResult.model_validate(row.result), self.repo.settings.outputs_dir
+                )
+            except Exception:
+                logger.exception("Evaluation workbook failed: %s", revision_id)
             self.repo.release(revision_id, token)

@@ -12,6 +12,7 @@ class Settings(BaseSettings):
     data_dir: Path = Path("var")
     database_dir: Path = Path("database")
     drafts_dir: Path = Path("drafts")
+    outputs_dir: Path = Path("outputs")
     database_tenant: str = "demo"
     seed_demo: bool = True
     api_keys: dict[str, dict[str, str]] = {}

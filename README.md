@@ -85,6 +85,14 @@ The first run creates relational tables and LangGraph checkpoint tables. Postgre
 
 ## Test and evaluate
 
+## Evaluation reports
+
+Every completed, failed, or paused estimate writes a read-only checkpoint evaluation workbook to `outputs/`. It contains trace timing, retrieval/evidence and pricing detail, findings, and reviewer feedback columns. Workbook feedback is imported into the existing review queue only; it never edits an estimate, rate, or package directly.
+
+```sh
+uv run tender evaluation-report <revision-id>
+```
+
 ```sh
 uv run pytest -q
 uv run ruff check src tests

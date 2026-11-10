@@ -173,5 +173,6 @@ class FolderIngestor:
                     result = {"path": str(path.relative_to(root)), "status": "failed", "error": str(exc)}
                 report[result["status"]] += 1
                 report["files"].append(result)
+            report["embedding_backfilled"] = self.gateway.backfill_embeddings(tenant)
             self.last_report = report
         return report

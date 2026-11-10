@@ -10,6 +10,9 @@ def main():
     serve.add_argument("--host", default="127.0.0.1")
     serve.add_argument("--port", type=int, default=8000)
     commands.add_parser("ingest", help="Index new and changed source files in database/")
+    drafts = commands.add_parser("draft-packs", help="Create review-only candidate packs from eligible PDF files")
+    drafts.add_argument("--rebuild", type=Path, help="Rebuild a draft pack using approved rows from this review XLSX")
+    drafts.add_argument("--pack", type=Path, help="Draft .pack.json used with --rebuild")
     commands.add_parser("schema", help="Print the domain package JSON schema")
     demo = commands.add_parser("demo-package", help="Write a synthetic example domain package")
     demo.add_argument("path", type=Path)
@@ -45,6 +48,13 @@ def main():
         ingestor = FolderIngestor(gateway)
         if args.command == "ingest":
             print(json.dumps(ingestor.scan(), indent=2))
+        elif args.command == "draft-packs":
+            if args.rebuild:
+                if not args.pack:
+                    parser.error("draft-packs --rebuild requires --pack")
+                print(ingestor.drafts.rebuild_approved(args.rebuild, args.pack))
+            else:
+                print(json.dumps({"drafts": ingestor.draft_files(), "message": "NVIDIA chat must be configured."}, indent=2))
         else:
             from tender.evaluation import evaluate_cases
 

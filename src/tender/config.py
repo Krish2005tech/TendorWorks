@@ -11,6 +11,7 @@ class Settings(BaseSettings):
     database_url: str = "sqlite:///var/tender.db"
     data_dir: Path = Path("var")
     database_dir: Path = Path("database")
+    drafts_dir: Path = Path("drafts")
     database_tenant: str = "demo"
     seed_demo: bool = True
     api_keys: dict[str, dict[str, str]] = {}
